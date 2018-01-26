@@ -13,7 +13,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 public class LogRule extends AppenderBase<LoggingEvent> implements TestRule {
-    private static List<LoggingEvent> loggingEvents = new ArrayList<LoggingEvent>();
+    private static List<LoggingEvent> loggingEvents = new ArrayList<>();
 
     @Override
     protected void append(LoggingEvent loggingEvent) {
