@@ -27,6 +27,12 @@ Example of `src/test/resources/logback-test.xml`
 
 Simply add the `LogRule` jUnit test rule to your test class and assert on it with the custom AssertJ assertions provided via the `LogAssert` class.
 ```
+import me.andremueller.logassert.LogRule;
+import org.junit.Rule;
+import org.junit.Test;
+
+import static me.andremueller.logassert.LogAssert.assertThat;
+
 public class LoggingAppTest {
     @Rule
     public LogRule log = new LogRule();
