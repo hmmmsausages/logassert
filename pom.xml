@@ -7,6 +7,36 @@
     <groupId>me.andremueller</groupId>
     <artifactId>logassert</artifactId>
     <version>0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Log testing based on AssertJ assertions and JUnit test rules</description>
+    <url>https://github.com/hmmmsausages/logassert</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Andre Mueller</name>
+            <email>hello@andremueller.me</email>
+            <organizationUrl>http://andremueller.me</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/hmmmsausages/logassert.git</connection>
+        <developerConnection>scm:git:ssh://github.com:hmmmsausages/logassert.git</developerConnection>
+        <url>http://github.com/hmmmsausages/logassert/tree/master</url>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -39,6 +69,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
